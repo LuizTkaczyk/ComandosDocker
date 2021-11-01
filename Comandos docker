@@ -30,3 +30,13 @@ docker run -v "/var/www" ubuntu - criando um container
 docker inspect "id do container" - inspeciona o container
 
 docker run -v "caminho onde vai ser criado o volume":/var/www (Caminho do container)
+
+
+########### COMO UPAR NO DOCKER HUB #################
+
+1-fazer login no doker hub
+2- docker tag 'nome da imagem' nome-usuario/nome-repositorio-criado-no-dokerHub 
+3- docker push nome-usuario/nome-repositorio-criado-no-dokerHub 
+
+######## PARA BAIXAR DO DOCKER HUB ###############
+docker pull nome-usuario/nome-repositorio-criado-no-dokerHub
