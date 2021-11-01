@@ -1,12 +1,17 @@
 ########### COMANDOS DOCKER ###################
 
 docker ps - lista os container ativos
+
 dockre ps -a  - lista os container existentes, mas que não estão ativos
+
 docker run "nome do container" - baixa um container
+
+
 docker start -a -i "id do container" - entra no container identificado pela id, para sair ctrl+d
+
 docker stop "id do container" - para a execução do container
 
-docker run -it "nome do container" - entrando em um container , exemplo , do ubuntu
+docker run -it "nome do container" - entrando em um container , exemplo , do ubuntu, e com -it o cmd fica liberado
 
 docker run -d "nome do container" - roda o container e deixa o cmd liberado para comandos
 
@@ -15,8 +20,11 @@ docker stop -t 0 "nome do container" - para o container sem esperar os 10 segund
 docker image rmi "id da imagem" - remove a imagem
 
 docker -d -P run "nome do container" - libera portas para serem usadas fora do container, no navegador, os primeiros numeros são das portas da minha máquina, e a segunda do container
+
 docker port "id do container" - mostra as portas em execuçao do container
+
 docker run -d  -P run --name "nome personalizado" dockersamples/static-site - atribuindo um nome personalizado
+
 docker container prune - remove todos os container parados!!!!!!!!!!!
 
 docker run -d -p 12345:80 dockersamples/static-site - com a flag -p é possivel definir uma porta personalizada
